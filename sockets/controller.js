@@ -11,7 +11,7 @@ const socketController = (socket) => {
     callback({ id, fecha: new Date().getTime() });
 
     /**
-     *  broadcast: para enviar mensaje a otro socket (a todos)
+     *  broadcast:es para enviar mensaje a otros sockets 
      */
     socket.broadcast.emit("enviar-mensaje", payload); // envia el evento "enviar-mensaje" al FrontEnd
   });
